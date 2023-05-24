@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Poppins:wght@600&display=swap");
+
+body {
+
+    font-family: Figtree, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+header {
+
+    display: inline-block;
+    float: left;
+    font-size: 100%;
+}
+
+h1,
+h2 {
+
+    font-family: Poppins, sans-serif;
+    text-transform: lowercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #69c0c7;
+}
+
+footer {
+
+    display: inline-block;
+}
+
+#logo_image {
+
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+#logo_block {
+
+    float: left;
+    border-bottom: none;
+    text-decoration: none;
+    clear: both;
+}
+
+
+#menu {
+
+    float: right;
+}
+
+#logo #menu {
+
+    line-height: 75px;
+}
+
+#dot {
+
+    color: #e01c3f;
+}
+
+#menu li {
+
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.standard_section {
+
+    width: 100%;
+    height: 400px;
+}
+
+.active {
+
+    border-bottom: solid 1px #69c0c7;
+}
+
+#hero_image {
+
+    background-color: green;
+}
+
+#consumer_reason {
+
+    background-color: blueviolet;
+}
+
+#consumer_summary {
+
+    background-color: blue;
+}
+
+#invester_reason {
+
+    background-color: yellow;
+}
+
+#invester_summary {
+
+    background-color: red;
+}
