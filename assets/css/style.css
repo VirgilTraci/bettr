@@ -139,32 +139,46 @@ h2 {
     letter-spacing: 4px;
 }
 
-#consumer_reason {
+#consumer-reason {
 
-    display: inline-block; 
-    
-    img {
-       /* border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px; */
-        width: 150px;
-    }
+    width: 100%
+    display: block;
+}
+
+#consumer_reason >div {
+
+    width: 30%;
+    height: 500px;
 }
 
 #step_1 {
 
-background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
+background-color: blue;
 }
 
+
+#step_1_text {
+    
+}
+/* <img url(assets\images\bettr_screenshot.png) no repeat left center> */
 
 #step_2 {
     
-    background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
+    background-color: pink;
+}
+
+#step_2_text {
+    
 }
 
 #step_3 {
-    
-    background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
+
+    background-color: red;
+  /*  background: url("/assets/images/bettr_screenshot.png") no-repeat center center; */
+}
+
+#step_3_text {
+
 }
 
 #consumer_summary {
