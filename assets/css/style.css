@@ -63,11 +63,6 @@ h2 {
     line-height: 75px;
 }
 
-#dot {
-
-    color: #e01c3f;
-}
-
 #menu li {
 
     float: right;
@@ -88,7 +83,7 @@ h2 {
 .standard_section {
 
     width: 100%;
-    height: 400px;
+    height: 550px;
     overflow: hidden;
     position: relative;
 }
@@ -98,19 +93,88 @@ h2 {
     border-bottom: solid 1px #e01c3f;
 }
 
-#hero_image {
+#consumer_image {
 
-    background-color: green;
+    background: url("/assets/images/sportsfan.jpeg") no-repeat center center;
+
+    animation-name: image-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation effect */
+
+@keyframes image-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#consumer-text {
+    
+    color: #fff;
+    font-size: 100%;
+    font-family: Figtree, sans-serif;
+    width: 300px;
+    letter-spacing: 2px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(128, 128, 128, .6);
+    border-radius: 20px;
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
+}
+
+#consumer-text >h2 {
+
+    font-size: 200%;
+    -webkit-text-stroke: 2px #fff; 
+    text-transform: uppercase;
+    color:  #e01c3f;
+    text-align: center;
+    letter-spacing: 4px;
 }
 
 #consumer_reason {
 
-    background-color: blueviolet;
+    display: inline-block; 
+    
+    img {
+       /* border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px; */
+        width: 150px;
+    }
+}
+
+#step_1 {
+
+background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
+}
+
+
+#step_2 {
+    
+    background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
+}
+
+#step_3 {
+    
+    background: url("/assets/images/bettr_screenshot.png") no-repeat center center;
 }
 
 #consumer_summary {
 
     background-color: blue;
+}
+
+#investor_image {
+
+     background: url("/assets/images/invest.jpeg") no-repeat center center;
 }
 
 #invester_reason {
