@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Poppins:wght@600&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {
 
     font-family: Figtree, sans-serif;
@@ -9,8 +15,10 @@ body {
 
 header {
 
-    /*  display: inline; */
+    display: inline block;
     font-size: 100%;
+    height: 150px;
+    margin: 30px;
 }
 
 h1,
@@ -19,55 +27,38 @@ h2 {
     font-family: Poppins, sans-serif;
     text-transform: lowercase;
     font-weight: 600;
-    letter-spacing: 0.10px;
+    letter-spacing: 0.20px;
     color: #69c0c7;
+    text-decoration: none;
 }
 
-#logo_image {
-
-    width: 40px;
-    height: 40px;
-}
-
-#logo_block {
+#logo {
 
     float: left;
     border-bottom: none;
+}
+
+a {
     text-decoration: none;
-    display: inline;
-}
-
-#logo_menu {
-
-    line-height: 75px;
-    display: inline;
-    height: 90px;
-}
-
-#logo_menu>a {
-    display: inline;
 }
 
 #menu {
 
-    float: right;
+    font-size: 100%;
+    letter-spacing: 1.5px;
 }
 
-#logo_block a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#logo #menu {
+#menu,
+#logo {
 
     line-height: 75px;
 }
 
 #menu li {
-
     float: right;
+    display: inline;
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 #menu a {
@@ -80,23 +71,17 @@ h2 {
     border-bottom: 1px solid #e01c3f;
 }
 
-.standard_section {
-
+#hero_section {
+    height: 500px;
     width: 100%;
-    height: 550px;
     overflow: hidden;
     position: relative;
 }
 
-.active {
-
-    border-bottom: solid 1px #e01c3f;
-}
-
-#consumer_image {
-
+#hero_image {
+    height: 500px;
+    width: 100%;
     background: url("/assets/images/sportsfan.jpeg") no-repeat center center;
-
     animation-name: image-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -114,91 +99,28 @@ h2 {
     }
 }
 
-#consumer-text {
-    
-    color: #fff;
-    font-size: 100%;
-    font-family: Figtree, sans-serif;
-    width: 300px;
-    letter-spacing: 2px;
-    padding: 10px 10px 10px 10px;
-    background-color: rgba(128, 128, 128, .6);
-    border-radius: 20px;
+#hero_text {
+    font-size: 130%;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 400px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109, 107, .7);
     bottom: 30px;
     right: 150px;
     position: absolute;
+    color: #fff;
 }
 
-#consumer-text >h2 {
+.standard_section {
 
-    font-size: 200%;
-    -webkit-text-stroke: 2px #fff; 
-    text-transform: uppercase;
-    color:  #e01c3f;
-    text-align: center;
-    letter-spacing: 4px;
-}
-
-#consumer-reason {
-
-    width: 100%
-    display: block;
-}
-
-#consumer_reason >div {
-
-    width: 30%;
-    height: 500px;
-}
-
-#step_1 {
-
-background-color: blue;
-}
-
-
-#step_1_text {
-    
-}
-/* <img url(assets\images\bettr_screenshot.png) no repeat left center> */
-
-#step_2 {
-    
-    background-color: pink;
-}
-
-#step_2_text {
-    
-}
-
-#step_3 {
-
-    background-color: red;
-  /*  background: url("/assets/images/bettr_screenshot.png") no-repeat center center; */
-}
-
-#step_3_text {
-
-}
-
-#consumer_summary {
-
-    background-color: blue;
-}
-
-#investor_image {
-
-     background: url("/assets/images/invest.jpeg") no-repeat center center;
-}
-
-#invester_reason {
-
-    background-color: yellow;
-}
-
-#invester_summary {
-
-    background-color: red;
+    width: 100%;
+    height: 550px;
+    border: 1px solid #3a3a3a;
+    margin: 10px;
 }
 
 footer {
