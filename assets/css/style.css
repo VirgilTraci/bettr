@@ -70,10 +70,12 @@ a {
 .standard-section {
     width: 100%;
     height: 300px;
+    overflow: hidden;
 }
 
 .standard-section>h1 {
     padding-bottom: 15px;
+    display: inline;
 }
 
 /* Main home page */
@@ -104,19 +106,20 @@ a {
 }
 
 #hero-text {
+    width: 40%;
     font-family: Poppins, sans-serif;
     letter-spacing: 2px;
     padding: 10px;
-    background-color: rgba(245, 238, 213, .9);
-    bottom: 30px;
-    right: 150px;
+    background-color: rgba(3, 3, 2, 0.6);
+    bottom: 15px;
+    right: 30px;
     position: absolute;
     color: #fff;
     border-radius: 8px;
 }
 
 #hero-text>h3 {
-    float: right;
+    margin: 0 auto;
     font-size: 200%;
     color: #e01c3f;
 }
@@ -125,6 +128,27 @@ a {
     width: 100%;
     color: #ffffcc;
     height: 2px;
+}
+
+.did-you-know-box {
+    width: 25%;
+    height: 250px;
+    text-align: center;
+
+}
+
+.did-you-know-box>img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#money {
+    background-color: 0, 0, 0, 0.6;
+}
+
+#problem {
+    background-color: 0, 0, 0, 0.6;
 }
 
 #testimonial-section {
@@ -168,7 +192,7 @@ a {
     padding: 10px;
 }
 
-.how-to {
+.did-you {
     display: inline-block;
     width: 23%;
     height: 400px;
@@ -180,7 +204,7 @@ a {
     margin: 0 auto;
 }
 
-#step1 {
+/* #step1 {
     background-color: #f5eed6;
 }
 
@@ -245,7 +269,7 @@ a {
     padding-bottom: 30px;
     margin: 0 auto;
     position: relative;
-}
+} */
 
 .social-networks {
     text-align: center;
@@ -275,7 +299,7 @@ footer {
     color: white;
     width: 100%;
     height: 150px;
-    float: center;
+    margin: auto 0 0;
 }
 
 footer>a {
@@ -300,14 +324,13 @@ footer>a {
 }
 
 .signup-form {
-    float: right;
     padding: 30px;
-    margin: 20px;
     color: #fff;
-    background-color: rgba(60, 60, 60, 0.6);
+    background-color: rgba(60, 60, 60, 0.7);
     max-width: 450px;
     position: absolute;
     border-radius: 8px;
+    margin-left: 10%;
 }
 
 .signup-form>h2 {
