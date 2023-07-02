@@ -7,28 +7,22 @@
 }
 
 body {
-
     font-family: Figtree, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
 
 header {
-
     display: inline block;
     font-size: 100%;
-    /* height: 150px; */
-    margin: 10px;
 }
 
 .active {
-
     border-bottom: 1px solid #e01c3f;
 }
 
 h1,
 h2 {
-
     font-family: Poppins, sans-serif;
     text-transform: lowercase;
     font-weight: 600;
@@ -38,9 +32,9 @@ h2 {
 }
 
 #logo {
-
     float: left;
     border-bottom: none;
+    margin-left: 10px;
 }
 
 a {
@@ -48,14 +42,12 @@ a {
 }
 
 #menu {
-
     font-size: 100%;
     letter-spacing: 1.5px;
 }
 
 #menu,
 #logo {
-
     line-height: 75px;
 }
 
@@ -72,94 +64,75 @@ a {
 }
 
 #menu a:hover {
-
     border-bottom: 1px solid #e01c3f;
 }
 
-#hero_section {
-    height: 600px;
+.standard-section {
     width: 100%;
-    overflow: hidden;
-    position: relative;
+    height: 300px;
 }
 
-#hero_image {
-    height: 600px;
+.standard-section>h1 {
+    padding-bottom: 15px;
+}
+
+/* Main home page */
+
+#hero-section {
+    height: 700px;
     width: 100%;
-    background: url("/assets/images/sportsfan.jpeg") no-repeat center center;
-    animation-name: hero_zoom;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 700px;
+    width: 100%;
+    background: url("/assets/images/sportsfans.jpeg") no-repeat center center;
+    animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-/* Animation effect */
-
-@keyframes hero_zoom {
+@keyframes hero-zoom {
     from {
-        transform: scale(1.1);
+        transform: scale(1.0);
     }
 
     to {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
-#hero_text {
-
+#hero-text {
     font-family: Poppins, sans-serif;
     letter-spacing: 2px;
-    /* width: 400px;
-    height: 200px; padding: 10px;
-    */
     padding: 10px;
     background-color: rgba(245, 238, 213, .9);
-    /* rgba(241, 109, 107, .7); */
     bottom: 30px;
     right: 150px;
     position: absolute;
     color: #fff;
     border-radius: 8px;
-
 }
 
-#hero_text>h3 {
-
+#hero-text>h3 {
     float: right;
     font-size: 200%;
     color: #e01c3f;
-
 }
 
-#hero_text>hr {
-
+#hero-text>hr {
     width: 100%;
     color: #ffffcc;
     height: 2px;
 }
 
-.standard_section {
-
-    width: 100%;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
-}
-
-#testimonial_section {
-
+#testimonial-section {
     display: inline-block;
     padding: 10px;
-
 }
 
-
-.standard_section>h1 {
-
-    padding-bottom: 15px;
-}
-
-#left_testimonial {
-
+#left-testimonial {
     padding: 10px;
     display: inline;
     float: left;
@@ -168,7 +141,7 @@ a {
     border-radius: 8px;
 }
 
-#right_testimonial {
+#right-testimonial {
     padding: 10px;
     display: inline;
     float: right;
@@ -177,8 +150,7 @@ a {
     border-radius: 8px;
 }
 
-.testimonial_image {
-
+.testimonial-image {
     width: 150px;
     height: 150px;
     border-style: solid;
@@ -187,19 +159,16 @@ a {
     border-radius: 50%;
 }
 
-.testimonial_text {
-
+.testimonial-text {
     background-color: rgba(245, 238, 213, 1);
     font-size: 300%;
 }
 
-#how_to_section {
-
+#how-to-section {
     padding: 10px;
 }
 
-.how_to {
-
+.how-to {
     display: inline-block;
     width: 23%;
     height: 400px;
@@ -209,27 +178,23 @@ a {
     border-radius: 8px;
     text-align: center;
     margin: 0 auto;
-
 }
 
 #step1 {
-
     background-color: #f5eed6;
 }
 
 #step1>h1 {
-
     color: #e01c3f;
     margin: 0 auto;
 }
 
 #step1:hover {
-
-    width: 90%;
+    width: 50%;
     height: 500px;
     padding-bottom: 30px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
 }
 
 #step2 {
@@ -241,53 +206,145 @@ a {
     top: 50%;
 }
 
-#step3 {
+#step2:hover {
+    width: 50%;
+    height: 500px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: absolute;
+}
 
+#step3 {
     background-color: #e01c3f;
     color: #f5eed6;
 }
 
 #step3>h1 {
-
     color: #f5eed6;
 }
 
-#step4 {
+#step3:hover {
+    width: 70%;
+    height: 500px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: absolute;
+}
 
+#step4 {
     background-color: #f5eed6;
 }
 
 #step4>h1 {
-
     color: #e01c3f;
 }
 
-.social_networks {
+#step4:hover {
+    width: 50%;
+    height: 500px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: relative;
+}
 
+.social-networks {
     text-align: center;
     padding-top: 60px;
 }
 
-.social_networks>li {
-
+.social-networks>li {
     display: inline;
     padding: 20px;
     height: 200px;
     width: 200px;
 }
 
-.social_networks i {
+.social-networks i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
 }
 
+footer {
+    background-color: rgba(245, 238, 213, .9);
+    height: 300px;
+}
 
+#copyright {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+    float: center;
+}
 
 footer>a {
-
-    padding: 20px;
-    height: 200px;
+    padding: 10px;
+    height: 100px;
     width: 100px;
     margin: 0 auto;
+}
+
+/* sign up form styling */
+
+.form-section {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#form-image {
+    height: 800px;
+    width: 100%;
+    background: url("/assets/images/crowd.jpg") no-repeat center center;
+}
+
+.signup-form {
+    float: right;
+    padding: 30px;
+    margin: 20px;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 450px;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.signup-form>p {
+    margin-bottom: 20px;
+}
+
+.signup-form>label {
+    display: block;
+}
+
+.text-input {
+    background-color: transparent;
+    color: #fafafa;
+    height: 25px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #e01c3f;
+}
+
+#button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    float: right;
+    font-family: Poppins, sans-serif;
+    background-color: rgba(245, 238, 213, .9);
+    color: #e01c3f;
 }

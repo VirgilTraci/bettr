@@ -15,51 +15,101 @@
 
 <body>
     <header>
-        <div id="logo_block">
+        <span>
             <a href=" index.html">
                 <h1 id="logo">bettr<span style="color: #e01c3f">.</span></h1>
             </a>
-        </div>
+        </span>
+
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="sign_up.html" class="active">Sign up</a>
+                    <a href="signup.html" class="active">Sign up</a>
                 </li>
                 <li>
                     <a href="investors.html">Investors</a>
                 </li>
                 <li>
-                    <a href="index.html">home</a>
+                    <a href="index.html">Home</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="standard_section" id="signup_section">
+    <main>
 
-    </section>
+        <section class="form-section">
+            <div id="form-image">
+
+                <form action="https://formdump.codeinstitute.net/" method="POST" class="signup-form">
+
+                    <h2>Let's get you signed up to <span>
+                            <h1>bettr<span style="color: #e01c3f">.</span></h1>
+                        </span></h2>
+
+                    <p>Enter your details if you are interested in signing up to the beta testing progam of bettr, and
+                        also
+                        if you are interested in becomingn an investor.</p>
+
+                    <label for="fname" id="fname">First Name</label>
+                    <input type="text" id="fname" name="first_name" class="text-input" required>
+
+                    <label for="lname" id="lname">Last Name</label>
+                    <input type="text" id="lname" name="last_name" class="text-input" required>
+
+                    <label for="email" id="email">Email Address</label>
+                    <input type="email" id="email" name="email_address" class="text-input" required>
+
+                    <p>Let us know why you are interested in bettr.</p>
+
+                    <div id="interest">
+                        <label for="beta">Beta testing</label>
+                        <input id="beta" value="beta" type="radio" name="interest" required>
+
+                        <label for="investment">Investment opportunity</label>
+                        <input id="investment" name="interest" value="investment" type="radio">
+
+                        <label for="both">Both</label>
+                        <input id="both" name="interest" value="both" type="radio">
+                    </div>
+                    <input type="submit" value="Let's Go!" class="submit-button" id="button">
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Social Media footer information-->
 
     <footer>
-        <ul class="social_networks">
+        <ul class="social-networks">
             <li>
                 <a href="https://www.facebook.com/profile.php?id=100064873788803" target="_blank" rel="noopener"
-                    aria-label="Visit our facebook page (Opens in a new tab)"><i
+                    aria-label="Visit our facebook page (Opens in a new tab)" style="color: #e01c3f"><i
                         class="fa-brands fa-square-facebook"></i></a>
+
             </li>
             <li>
-                <a href="https://www.instagram.com/bettr.friends/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (Opens in a new tab)"><i
+                <a href="https://www.instagram.com/bettr.friends" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (Opens in a new tab)" style="color: #69c0c7"><i
                         class="fa-brands fa-instagram"></i></a>
+
             </li>
             <li>
                 <a href="https://twitter.com/bettrfriends" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (Opens in a new tab)"><i
+                    aria-label="Visit our Twitter page (Opens in a new tab)" style="color: #e01c3f"><i
                         class="fa-brands fa-square-twitter"></i></a>
             </li>
-
         </ul>
+
+        <p>
+            Copyright <i class="fa-regular fa-copyright"></i> bettr.friends ltd 2023
+        </p>
+
     </footer>
 
+    <!-- Font awesome script-->
     <script src="https://kit.fontawesome.com/d84ce2ca2d.js" crossorigin="anonymous"></script>
 
 </body>
